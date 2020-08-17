@@ -1,0 +1,291 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : FEN_SDPMA_Connect
+ major_version : 25
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : FEN_SDPMA_Connect
+ identifier : 0x2f3a69f501b90455
+ internal_properties : BQAAAAUAAACoawav/efq0QF0N4XebGUvvKr5a9wzXnkQhw7IBSIFlhkmgiha2SbLfOBrmMHBVR7IZVbl2UySAA2Q8iQlwEf34+YQvgNV4UI7W4L961hhpDzMO5Eh12w0t0CblOjWdf6oYl5VyUdlrW+sTQbmiNzFwHeKo39rP3lHNp3yoAwkaDirlUGzid7Kb11XlqU3bm1DyN215c7cwPcfy2x03a7lEKh+gcyegwfmlHBrc3B6WUcr6BqTL+3uwATji52cJyn2N5VU7TSpUWBvd7EiVUGKTWj3L/aavaLOkohXpN8+6ctH+XlxReD5Fzb+Fe3XTQ0a5OY5WFwI8mq4Ljy9yOB/8iheNlD2mzSi4Ir1XiI9+W+Ixb58JLtNXATk7oEJUOAHC1/28dUXrrEr7iXy4M+f64HONjngJ1cH/yYtufZNPBkieTG540W/oP66Nc6dvx3F07q5N8Md/g+nz9JGqWMOFeot3fvUiYqYnC4zwJWEUsHB1SeTDdtJ0jDUmYxjqwKVLmrWe5CaH/ybJHMSOkRR+X+W2uvumvhOUA/9/mxndUw7KWlKNeOkV8WDxhGBSdQWOmKwRQlNtyL5HL8UptR66bfjFX99ht1ckBd3KnaK8tk/JCqk2yLmkGAM1wYrugrt9WoucybQ+8HfY+DUjyU27QD4cXjqX+iyZsLtmaPd
+ controls :
+  -
+    name : COMBO_Combo
+    identifier : 0x2f3a69f501ba0455
+    internal_properties : BQAAAAUAAADdvqrZSzPzLK3/UaXnJjL8nejViS4W8XkP3/rrxE6wVM4y+49nApMMIe//fljK7jH76HmdDdpjagCG1C1hDXlfiKa8LWZ+q7JHXVgRsaBaqg0nZWASi3w1mqyZ5JOLXKeHSdmBoVBGAVEpgTX4m93fvzbifoZqa8xm5Laas8Jg9leuDcwniY4kcFZPlXgbJmap3BtOVr/ySR6JLkVl+PK4LYw0sQd1oAR2NefXPRuXUyeCJbgFpdBTdWbPOWcQhU7e16yiy6xV+8Y+SvwuF1rGExUK4pPjUrui87Q52ikhaKGqu6D7vCVnlWxp+dRNG9OhnVxc2/LQQG/pL9bG4wkzQgi/SBkEmzwRyukismEMpaz76SjS7srhpaZ/bETdrb2ZBIE3tTd8LwmpeuyMo7OvwzPJfvWTJguMn18PngvmwtcAizoccZCw1VVCA+YmM9LGE7D2q76/dvYQZ/ItLmvKbGqRUJBAr8oM/03YeiWeWMeHvHC4gL0kqGrY90foe2bY4d8b8hOdfaSPlvn5dWspXgCBoS2HVMfCBhZcJtAc5B8TdUKeNpvOqci567nHR2glajZJlBO+mVl4lHZRun8kOeNPPklptiwhzD3dXNtb9SJDxKRMlorQYQEzNG513uVLWKzrsVThmbhI9lHKa+mbj8+tBTVeQv0HqnITbh7FzTpNTuo6RsOzH3/0NX1sva+GfuX1GpEvVvOVqJrn0UgmOI871qL/6ih4Tu8wY7QhS8G1TO9U7BD7ibcKyqdJ9OQK57M173KUg8szuwQ+ZXg0EUuc7OmtKrabWSLwWm9s8H0e8uCDlgtPUgBc/ElawvU2GnSZoJM5KXjQUZdwU7FjXaGpUotEl+w4CGe4ThrxbQC9ERYH9SGpUc7J2sj/EiZO6Rs7Lb+8xSUqNst+ToccUo55LrT7QRdQpdCAuRhyW0386yjgouzV3tJUReXA+djVfDq8dTxvaDkS98hvPRWMUe2blwPA7GB30waa3NTTWDHMwR90nYuC9NagkHhZds+5aUx3Hw/SEJtWZmF3vEfCmrNgkiwsii3CoVAaSq4tcg7udkR6WBJv103SzAfM+elcd54eBfqkk2jInJ9SzZG+QUeLF0F2fDpicJCJn0SnN2/pZwiVkSuJkj7TTH6jOxvsk+6MXTg9CaLLGE/TZwnA574TChtg1X4+ZDLQGiNm2WfPiHwbcEzwtFaMfGtYd3YrUF6Qu/P0EUjjZJEVYf0AEAlDTCipC1C/6PWj3ylI9URfYGEg+XNp0ti54AenIup6tHFN+LjYGPHysdVhc3NqojEEL61/EWVfwEsWppoT0R0gz9ZxJp+kfYmVnYIDHfNwqxOkfqba54Jnssd957hVHGvsKIBya0JrFswlhXXMmEXq7bHEUHfP80flmIRpK/H2KSeyBAFslj/QLD1Nox77xJK4o8enxc2rR2wjqXRq09C6hzAItRsqh1wkrB0f2/2QhtOHZg6S6utgVQkPL/yM/nSRokCsp0BOOqLfTOxqmT1bjPZVADFwPY1be7rwm+0hZ+tqbUF4CiSvxicys4oOR3GJDUin0Mc3CHntqBkLQb/j4oR+2Mti69035e3EsytXc9Cn
+    dropdown :
+     internal_properties : BQAAAAUAAADnT/7H19KqyZzbcILLyKZ0//D9AEkcA8RMWJ9rPfXbcOWV9HI0O3T5lbBePNUkdYTEZGQTC+n6/whiZAD0ug+Wv6kJKUN1nGt/O5qYNGP6ddopOMb8slODcQqOJvxikmajy5TkgV/M/KhxHR0GlxyDnsFKKAlLvT+1O+YAkrs6/fa2OuTgggw6CJdEFwsGygvd9otn54L/3tMxDE/wBnVk/ZhmybsiqjfJUnvuXE/sSGdRiah3a4hMRfXe+bCCa5y4t/LKZ6YwHmM4tv2WhegiMeLDZdRokviU7RGe9FDzEpZbKh3VXZgx9ZkN1vXK8m5O5TuSWCwwtVRUWIw2LLKrUSndmsJwF1o+Gv+cPe9RGOz8ZMEvF91CONoh9ignM1YXgTr7dbbQClY4GugiDX1Lm3l2yBT+dvpDvtKxHLVKyZGCHck/gwxLMqhXkNJfqqJyfkC6WzZrW03BEGk96siHWz0z4T8hzSd8/viQvEDGBgtEenYlLpGXGCCKX3dRTfT6VPE90giy3422goY+eilrbcXC+HBwAo0/f9/itlJuIjgxx4XnXDHDcY2Zc6w3w/DWCviIWZYaUK5xI9Qk7pqnJF6cXH3hfjI4aIJtQQHKdF+r5uZTttaai6keblcCMeKqVIjtQ09ZP/KyI22pe73YDaOa/4AQ1TIbMWgYGyOqu2aa9OFz9lOBHhVPfXUO0oFLOXlLCIr0GkeTVScC04Eu7HQ=
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1+
+         // Version 1
+         // Description 
+         // Combo liste simple
+         
+         
+         
+         ListeDepotAfficheCombo()
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1-
+         
+        type : 15
+      -
+        code : |1-
+         
+         RempliInfos()
+        type : 33
+      -
+        type : 17
+        enabled : false
+  -
+    name : SAI_AdresseIP
+    identifier : 0x2f3a69f501bb0455
+    internal_properties : BQAAAAUAAABoW/qoCTmMBOnvNhuNHr0l/t7pp8ZSm4/g+CH1UAY7N9o6alsNiiSmN9KWOQ+EZbQrQ4H3ZXuuCWEXOfAdQL78FK1hv8QzwzDUIfndRICI4k5Ed3DlPOsx3fmUWES9RCPZXZNfJZ6kn4qhxTnl08MUfqJAvJLdXI1Z/Nxp0Hn4ErZ9CA7jNUldVi9MRzCAxR3iycAgvw2H79e/Y2vcM5putVFKty1FdQU2/rp0uWF1EzCKloMobViI0jiwAqDFjzqo5u7wwBiMtfyi+F+72ipP26W3yjko/J6myCX8tueVPlrn5S4kGxlbqHZC2isLngFKeh6YJ0QaK44ai5eb9Umc1DztT7i8+fMe+N+0ayPEVYjX0IXpoKCC/4PJrvzfjifqnvpIEFWWSt84G2PsyNbELRy7wJECsb48OfQrG/Ly4xVHRx3amJTaTAlPpLkTSDLDEvsMiOd+79aTv6wxjr3MbA7dvki/HsV7u+BoUB1qR5XB9rAz0Jn1MGc++GsjudBGRv09KOifgjf+MbVYyAynWn4qOZkMYTeVYwZE44ivoJNXQ7DzfA/0n2WTRd4IW+ALyJ3vmH0i17TaVr9H85e+JGF0GUmWYGVsyvFHk+/9n3MzT1jyzhl6JqSgmzKae1pMdhO4QeGOU4Ume5DvZdh2qDBCAdkPzqbkwp13ZETnCN3S6y9gqdWjwKwKMEds5gaj9oBkGUuTyGQupzlenVkSXfRvCxFHhWLMqc/N6n+zWDc5qjXc/7isFd5piO3ZBo2VqIou38MSC7dWQqs66LTArFtR4zPkCSV+2ljJcYFzQKqvmrEOkATnczeExvWMw570cKXIRlRCBTgbqATPekKm2AcUn4JQL0+SIASKQl4cxHknWQo6GqFUg8DtDrp3MViXzlNIs77irDHsB7nuXE5vRITyBVbf32YjP0QrPgmGDEQr3tyXldZyQfoX/CYbKmP37omYJH8H/YlvC02wA/zhQlJx7POi/Vnugctgh4NfAjoE2Q+4PCKXnLLt9nsF92Y1tt9jutLFTG6Gexa11CAOYpQabYez42Cy6o950sWFUEZ043bG0GXnf5TBJIhcPWXR9ZbJViv0nMjxpGXRSdC+/PDokpp5wrZOt/GBW12X
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_Masque
+    identifier : 0x2f3a69f501bc0455
+    internal_properties : BQAAAAUAAABmtNdXUmlWz04nMxQIcl/k7ZsV7ryQ9a8NBKxyX4WtekMQ45ykUVVTG6sU/cEDicK0UctRj3O06xf5d7X8ezHIYG3jplOLK2xY9Vw82AFkuHdWs1FrKeUPemmlsNhq2ixpJEmJkC3JIMhgINaarCxhaGswvNpfFLvyroKJiZCt4GqVzXWg6hTZmFcV9A5wH3ej6EkBI5Kt3vtEyGxtc9fOZwZhzSO2q2MZqweR2wGaRRiAE5zyZ2Wx4Mk2mJsyyAOMKggAp2TOY+mHUEobQCSx0HHufCTL92bNmByrPk5+1vPLi65AOk4uNk4GZ1AsiZs9DGHLAknEziQGe/baVrJNejF1b/ynU1x8OrqplgtysGUOUJaUNhRI3y8RMkq5dFVkl+3kgUVmbyMfcNhXaqFbKXxBPWRKbq1KDZF5oTNfWBSduPFZVJ2vC7AVJ2IIjvAHWrR9iJMMH6JK846UC4N8PJiIWO44edS2u5jCTlL0Jnll0Nrh86M7P5BIpjdBf8hLWe6YaIa7S0jZtg9wjU4ISwijEvhv8eyYg+w6QmRVEdP0QZDI/7p2fGponDuXswzgzMloGAcPs/1SQTzz4YZMwkhdhaC/jQUFQJtvWsgXyXcM0vZIc034UZDtHagKErdAAFjVyX2iXVWf2QXxkV2WrwCzcf9zYr50dYhpHyrPbkLni3ceUJL/fJA255rrvyYhepTxLEme2hd7ukCVAB3aeINccJkowKvFXPKvzeNv61RU+hx0x401annOhjrU4nuoh3SPYvhf2RnL6XYZcgW6QaHrdtkHZaTeyHXoKwpNk6jbTTa3UEPC36v2a10WrjOI3h0bqC4znxXzI/nPwRJNGdjxCcyGE8QhZVD2Yf8YPH0zBJ9+kvMj3pqX2ulTjO1NrrMH5FOA4L6p9ZOOCw+APwJDgHMmzG1WNaJZBIDeNbW+zXyolGVtGzdxHFCrI1Ug2UxgTUjorICt18RYul9DtAvkpyV0ACyK0j59QnwRoCH6YajDJd899+OFlJijGwAajYTSzwP1wywY6K41ju/CR0fTsiCvBVYEPYrz0RToVXMvPEBnegD135RsRVFv8pZ9uEc6XF/Ib/ltbM5eWDoJjsVr72h569WniRTZ5tVyH874iChdPb4cxg==
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_Passerelle
+    identifier : 0x2f3a69f501bd0455
+    internal_properties : BQAAAAUAAAB8A2z0MuQKUkjRFIJdTfsADugyExWQ9mEteuMlq/WSo7PA1yDsiqsrDOIPSk8JwP4GXxBflsdTYYfPXeooMzAQ5M509EnYnyI5UMxetooDk68zZK0lGponegnjFS8le9Hm0XIPqYZqWikeiGg9nKWc0pAnWYyZhuU3Z9pqNl6qJjmcEPNuQPNdFd8/ZkJpCvNHpJABvypA+nEepG/R7G5Qgjjo1YJyB5EGCAH4lB3n8Od62zb6mKJBxaE8cvilH4MOvClhTSZYfqxzXwS4BTkQyk+uO7iGZa7aLAd2ecUtAErjZMfXGx8KR5xhPF8duSGf8IR+Ngtyc4IBPAPU0ZA8FZu2rNQrFb3Tbn2BuaMU0hkKHHbjXTj72Tved0gSkHvhDANzwRQDQn7taLJcPZ1S/Oe6xYeBA2pA636XqSWHS2BLQYJFOMSsrhvp2ESWa2I8QktakKstd1SAgE507TbMOwPDIQFKjiFuUYrHHBRgSn9e2Y7xLmKfqP8P9FzpTIdU+V0b3snoZet5zrV9cXK9yd+CpTG7QqPJXSszFUfbQUKvks8vBpXZzgL3qaEVO90NqVWHzu6HCWCj3RstM/I153WF+Gyos0Wuo/Vm4nQRHozdjhUY8GH6BrF3eGYoxsKB6ShyeXCmd5iOc+IjIz1l9M9NpHs6LP7Z1F4Oa6JdqUE6hQQib+K5x2Hu6AiZpzsYeczk6EB+6AJMEn+napHlLzJCoaubNjv6N1hGy6FfslFPrDcqTmdxHcKCBRgC5uD1HBK4KEc/I7Qqg91ncBHDhrS/wdNCc5A/nwfNtyIzakFYoZGpi3k+NjrMnj0qsMR3A2tSpsX1p1KKJbp133r84gcRrOrlFTAa1iZtDxWcdQCQeqyik3GTnZ91x3knvvQe29dyfi6EFsUMT64InTcDYj/p+7dfHDOplCqQyEiEAkAFD99kG6/R4ALTDSYZS7yTdibNnW0cGuNqLxMUikmeVeqyvm/FgOIVgejUko3uuLl2zhq8CTTegdOQwG/AAiWeAqBPgY5vbocJ7WWHXhh/U1O5vlidko8jxRf8iJ0U5xvRQGTag6Q9zfVt/4jLtj3urDpZOrzxHSBc8uz+OJ5KXbE/g0eyFNmWjg==
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_DNS
+    identifier : 0x2f3a69f501be0455
+    internal_properties : BQAAAAUAAABkR+iauVeG/CKSGpX7Zynv9NdNXFBeVV4gJs/98JisqZAgTcxJxrTWo2gAVHGu6vq3115Qld5B9lZVHl4hjjNGkWO76osjuAOixUM4Q9vfevqhlBqXez6v/VNvOPRkcn02ykykoDwQ9KRtksfN1iTBdaf7CAEvL2UkxkOh3ez9Mfhc4pF2Sg8TebgsgvguUKTJuNJKIaj1ySjJ7HnUlQQEGty5tMfegEVYWr/G2NI7VzHUsHiLpfPXBv/TOczxkWHizrt+nHumk/YAXxoKGRAk/ori4nAJ/KRBwnHDuAr6IVNm4YV78ATKxyO2jQng7Ek1vsrJz2T2e6R97OwKMVvS7b2fNAw4EYVZ0LWnH+0Ut2tY9sRp9NLcq1BspnHdDyDx4Xjkbp6609GY0DK5ukrPS33xaSYwpMU2GOo19Yh4pRvWsN8nfKg8Gzz16lAzqI+TWHOMW4L6m/hInxB91ArmYt6dmepbJZwJhn3DNVbM+bHmd0Ktq3pbTVWBLonu6fVtwBwf+h+N/QsR102fHdjVzojzFiF+7OVRz9r3vZup20l068JDgmkMz3XVHvs1DvM8TkPd/xD/Rpf2xX69EW3xXPyJCNlUszLBBoEXsja0oA1QrllB0qNpS7DdpRgoN7T+ZDyyJiWbgvCtqINqRH1kcBwWvmL+Jq8MWUxl86yYs0nNGdxzMXCCcl05DC4BbnUnGjQwNdBe84uJj47ZWabXaPGyY6i2hYm2sZc6gJIphTFD0dZMhziJ895j5wupKPuDngvrzK7eu1oObLE8wfGEqmo8iCnPVvjdr7wbBilVV9HW8DYdWvp25HgjTObncHUTu2LHYuTGAywyEpJwVuBZfKPEJUYEbKAM6oX5pCIMmgicpe2agCzXQ0Ui50bcHKNAjXxx7ENBdu8SPgy/gInapu+ICFmoFR/LqFWg4/dWaz4dpCaQ8qzPOLhSAd3ADZlVspVaGZ6Z8Dfc1jFVZyntj7YXq7cQf7p7d6McEoZkN41KyRPoYk+M9feJev7Ljv4TS7r4f8lS64k8uXKxPA5xEAq4a+O1htFaeZXVzSCitZSGIxU9+5ZUDTshMsYLlSII9a35qfDp8A4LUNNa5CQfIlgNXrHAQ4hnYz3DJ2GL
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : SAI_DNSSEC
+    identifier : 0x2f3a69f501bf0455
+    internal_properties : BQAAAAUAAADaViG5uQZy5T8ojvBBdiqsskCz0USphnaQy9kDWvfSfs/C06VQO+D+X+Ls/opWlcF2OccbJbbajZ5TlCjm1cXQTnGJ+yBR5CqJVjiFZd+0pOru/HM5Hx8WMmfogOMtMiwkDU/A2Qt3Qb+Y5teJdKKjBRIrtKhe0OB2u/K69fW83UnYZKiIPiZGZR7+XTcK8S1Amn7FF2TpUkR/8N90Ksrpx3LvVktovvBf+biaWpXHtstSPARzSpsNTMDSGlndp4H7iTBLmFhZTJoRc0Y1hiY9RO7xqwGp3L3/tgyvr4CDTvWQAiIKfkAl2T/4ivhRuIhfJO2bdiOrJnUH2Dog2wcc5K+xTErFhMQNPiCwQuRYYLKjcSyDKxNYa2DsZTQ0rNcrns4zGx+bQ00g0ONdWbouuo0/q66h8fuYAr1oVn/Gcx5q96TVwPIOwqNNHW4/czsd/eD2wqHxLSVm+7XpFR1bI7UNpOw8OP07q+TSFwfCd9kTnQq5S/vSW6WijTJSyc6bxHd8mLVvzc++QHYzM/zBc8KwMq+6Q4cv4mQlzbpashGCj9/SxQRuXoZBgxuXQpx9DdtVrsrQjt5Nc2mRk1moSz05mBDoUEbEYzUyduziX/iryn1QVEBV1hXP1MgaYVE/FZSqe2IBVpacw7adhXbGcGW7anEYabORFh5qzSx0YL2IWaxYBUnYXft21MLjqBRyn4QQgJxXCaKIlBF9yA4abfj4x8ebkeJWt9zeBavefS9xTslePiLkqUYGLTDOd0W3ZMwaYBsQMB4MLV+lBnwaOjjZmyHY4A0Zve/Jz+bKPdk8nXkdE9RhAmz4lmc8+7djwelA1FPqjPRSg8CHmd27oJ2VxKLRXINycuCHW+Vhat7KBI4Cb/IY6yvneRmDsd92iS9+EIh/9bnKxRzC50AAgt8TPTUFsaQ9Kha4xm51J6yTxQWCEUQWYqTNZzzvOJm/anZZ0XUXdVvORyc0fkaLf5TOzoO981VvCYTc9AreQly/7517TjLWaLa7MdS3lv1GQlCi1FCdX7rKTUXLeJ8BBTHQ5egk4ZEzmmk5RZ7euB7clnyqPU8Dg6QH+ga2BQBwyB6y2omH58uanFdI9ood5niDJIIpyvIkL0fHipXhyc9L
+    type : 2
+    code_elements :
+     type_code : 3
+     p_codes :
+      -
+        type : 276
+        enabled : false
+      -
+        type : 277
+        enabled : false
+      -
+        type : 278
+        enabled : false
+  -
+    name : BTN_Config
+    identifier : 0x2f3a69f501c00455
+    internal_properties : BQAAAAUAAABl1zbFlC8q4+oZdXZs4nt+sxvNnF0LS/Ituzl0MSG1YCsvl2XnHxZqzJd7lVoEEpA3mxzM2UNOIQuWQUexu6IUeROpG9VUh/s4Ps8Yqef/RlFFvuFn3yx90LyWhrl8zSaznYWMCXAH2GenzW197dWBRgNkQlYlnfFa+yQO5BSLj3/zS1f8Mf+ok4qb2IQLfPloPFxTrDinfxfUE7gxqEbay0kAxsvtOunJJNf400lW0XMi/sTdbk2hl2/snoP+QDMMCnqH8ps73JCZ6Q/M7SFU3NUZvR2UDxOeHOWgXWbYeFgMQJk+pthz2XdW+ctZVwbtbSE1R/aoWmfVQulX+jReHgZyijeZ1ru9udusCrwYeM0IrCH/8rOmjjZc4dC00CoPi2ksbpiVHRZTo/m6M4MJp25jVI6cRuncri7VZfixL/zuS7/dPt1blrSSuYYVX7SHFoW1bOygSgU6Gq8NkxSL7HvDeeGsPL1cNwE5Q5+3V899HxJk9E4ybqVdtz0GgeN/mweDlDTMchsE4kZ5sz4Kkfdp9s6kWFxJlo4j6h6YJETpm9cf7JDQXvB82As927UCvqYclLHicupi1jBSKE7UbPj2jSBcOqrhu069q+lnTj6i5nqA5kLcWIYokt9aHxdPVkdD+fnI2FULUYp13naKZfmeWKD5hEF5r9IBWmLmpSA/AGxDhMp2dM1dhghI8Ijtl8d7DhwSyt63tQV3WvcYe4HTzGIghSkBVWs9gI2YA9kovXth56wp6gT+6p03WdwQ1A==
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         AppliqueChangements()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : COMBO_Connexion
+    identifier : 0x2f3a69f501c10455
+    internal_properties : BQAAAAUAAAD1dLuwAOSp65DLL+oewjMYncx8RFhLmuYUpc7UxcHyN44ghrDpUPxUEjEboD2nhEV+3LGnzdMwIJ1LCWPgv2acI5qSGfOCJn9BtSI366dJpulHYsfcmy2mN4A2OU7/hcMW81OXJcCsqXdTppJrn3293Kczn1QgB0Gmv3biqUrsudX/57mKihwxNdLRQ0VxA7Vu7Rq8SGoBVjl45M3eklyzkfG8LLeeTYrnewCQf0saNv0pDRTa9PiUBCMYXpuyYu5Ev+Avq8U2y97hf4GdhCWeTnol9T0dlnxx1l5vo4IK4MbMaolpI9tcjpnWagP7IYVaqlpFFvwgn+SuP3/BGxu2ppp/PHgn6ZMn4uIMsEXkf3UBV95JHQIzxm0PoeE3Df3yuApvzmexK90Wj826A2TZ1Xv8ThhTTHBL5k3ZqEpVAGtfVHlzh+LEmldayFqJWwj+Wm950l14yYbooF0KTCJhyRmERPMEXzP1L2hD1eRMU6R3m8r5U51TMMkyiideSUgQ16geXapwA39yzOQo4CS2eTQWLI5ldhlV9OrDSVj8QFrJmFwiVQpSh5/e2fCNUh8BrWHTDgXA2y7mlCT9en3lSkH3DYcLevc8S1G9yL6YQkSutFRNrWBpsfYlo86iaPJZlXEHSlQWelFmPoyLBgCBJPCAsvV8uPGwdV87FenzghYATVlfOKb9iDKqbhZdgfckBfIG+ntgVtO4i+VTWzKAZ3UqM2dBqxCfSFugI5/FpnpIH0mDWiQq8ZvFbyhAZxQj0ks8CLPzepEq/nTRO/i/FPIfApeRcR0KqX+BznBXky8l8gxCho4oY2pINNibseaoL50QShCZPcXmzvDQ5S1iniZCPhJZEzoqainy2c8O6At0iyrux3JfVjT7cNLuYdtvW/hxAYV9avTnXaV2fiMSQ4DV5OOg3VjW/ev855JRJRDmRbm65iXjvDW8wj4f8yFm279N62xBmQPP870yCMJ0m/6aENxmEG+U++WA8OQJz7x0lYWCNrsXtXcd/BVwMPn2x3dMBfjIiOzAm6Z5jPSDCSvKsXZAW7g8jDpHCmzAr6N1GKvhJzNTskSRHaL0T6Z1PiWI3PNj8Am/F4zIlJM3UPrfWy3isYpEbGxc+3btRY1RIhJ+7Bc4C+iGENLsZcn4RkhU9vFUawGeujgGG5iDJK7oNTf4Hv1+3xCKUyyDDSSu7qIUkGDzAmswAo+izbQxBlP42iJaqajNcPZe/gFg9DGi+aH6wrvYEeBsdGyyANRANsCSwHRN4ai8MSZ444sYgUKEXiPj4GYLbQR6S0Zm7pIaFhtO0Dfd1zjrKLvf9f2/iOQW/bKnr3xIuP3EtA86w6Nf0wISmrIO3bB+8YQW6XTo5rPkJnr3uE7MGHQcvVRGvKkPGo9YUQznL2q6wN2IeDEial3qEMjnxaO33gTc8foyTN1ab/XTlpxTIc0uvQxRf/ZkhzOvAPunwxVoDkO8NK1DxFzVYW9gczM1j/9DkDaDODegIXzf1gzeDGfQO76RPayD95rha3YFPjv4ug5tAtb7+oE=
+    dropdown :
+     internal_properties : BQAAAAUAAADnT/7H19KqyZzbcILLyKZ0//D9AEkcA8RMWJ9rPfXbcOWV9HI0O3T5lbBePNUkdYTEZGQTC+n6/whiZAD0ug+Wv6kJKUN1nGt/O5qYNGP6ddopOMb8slODcQqOJvxikmajy5TkgV/M/KhxHR0GlxyDnsFKKAlLvT+1O+YAkrs6/fa2OuTgggw6CJdEFwsGygvd9otn54L/3tMxDE/wBnVk/ZhmybsiqjfJUnvuXE/sSGdRiah3a4hMRfXe+bCCa5y4t/LKZ6YwHmM4tv2WhegiMeLDZdRokviU7RGe9FDzEpZbKh3VXZgx9ZkN1vXK8m5O5TuSWCwwtVRUWIw2LLKrUSndmsJwF1o+Gv+cPe9RGOz8ZMEvF91CONoh9ignM1YXgTr7dbbQClY4GugiDX1Lm3l2yBT+dvpDvtKxHLVKyZGCHck/gwxLMqhXkNJfqqJyfkC6WzZrW03BEGk96siHWz0z4T8hzSd8/viQvEDGBgtEenYlLpGXGCCKX3dRTfT6VPE90giy3422goY+eilrbcXC+HBwAo0/f9/itlJuIjgxx4XnXDHDcY2Zc6w3w/DWCviIWZYaUK5xI9Qk7pqnJF6cXH3hfjI4aIJtQQHKdF+r5uZTttaai6keblcCMeKqVIjtQ09ZP/KyI22pe73YDaOa/4AQ1TIbMWgYGyOqu2aa9OFz9lOBHhVPfXUO0oFLOXlLCIr0GkeTVScC04Eu7HQ=
+     type : 7
+    type : 14
+    code_elements :
+     type_code : 23
+     p_codes :
+      -
+        code : |1+
+         // Version 1
+         // Description 
+         // Combo liste simple
+         
+         
+         
+         AfficheConnexions()
+         
+        type : 14
+      -
+        type : 35
+        enabled : false
+      -
+        code : |1-
+         
+        type : 15
+      -
+        type : 17
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x292573e513b5f221
+  internal_properties : BQAAAAUAAABd4biPtdLQOwfUFiqrit8H4xfGqKyz9t6VLxCUnNZRQiLPVs82PZNE+UVdKRzjizyeuKyRur85gNMUfqplpmtNDnQWQla9zo+GH9+1EfUJ6w17Dn/egD/gv+Hhywk8c9unIdzEp7EHgaAqD28w7Agveg4u19PBcKGZtQ==
+  options : []
+ languages :
+  - fr-FR
+ popup_menus : []
+ message_bar :
+  internal_properties : BQAAAAUAAABqPQh6HC8RxAVkp2SqPYLuZrfVhd+1KX4lx22hIT8uqEpE6yP7Sbc2rmVqdmL816EWzXOkEe9ijOtYwchZKAfpy3B1cNqhpJgsnbUs
+ code_elements :
+  type_code : 1
+  p_codes :
+   -
+     code : |1+
+      PROCEDURE MaFenêtre()
+      
+      gJSONconnexion est un json = fChargeTexte("C:\Users\ralph\OneDrive\Bureau\conexionsSDPMA.json")
+      gvMonVariantGLOBAL est un variant = JSONVersVariant(gJSONconnexion)
+      
+   -
+     type : 230
+     enabled : false
+  procedures :
+   -
+     name : ListeDepotAfficheCombo
+     procedure_id : 2250227464817476693
+     type_code : 14
+     code : |1+
+      procédure ListeDepotAfficheCombo()
+      
+      listeTEMP est une liste de chaînes = ListeDepots(gJSONconnexion)
+      
+      //Vidage de la liste
+      
+      ListeSupprimeTout(COMBO_Combo)
+      
+      //ajout du sélecteur
+      
+      ListeAjoute(COMBO_Combo,"Sélectionnez un magasin...")
+      ListeSelectPlus(COMBO_Combo,1)
+      
+      POUR TOUT x de listeTEMP
+      	ListeAjoute(COMBO_Combo,x)
+      	
+      FIN
+     type : 458752
+   -
+     name : RempliInfos
+     procedure_id : 2250227464817542229
+     type_code : 14
+     code : |1+
+      procédure RempliInfos()
+      
+      POUR TOUT x de gvMonVariantGLOBAL..Membre AVEC x..Nom = COMBO_Combo..ValeurAffichée
+      	SAI_AdresseIP = ChaîneConstruit(x.IP,x.START)
+      	SAI_Masque = x.MASQUE
+      	SAI_Passerelle = x.PASSERELLE
+      	SAI_DNS = x.DNS
+      	SAI_DNSSEC = x.DNSSEC
+      FIN
+     type : 458752
+   -
+     name : AfficheConnexions
+     internal_properties : BQAAAAUAAABkgyVDoxewVvmrY7OcAk/D2E4cDDFlaoPptFSb4/XwaJTOneeuFCFOknlCRUxkjIuhFm95pwLfJ4PVQYSwIYdRqzedpP1MiQ/eFfVc6HgKHz18IbDUUCahaRb7uR0e3zSD0+hkZm4AO+ynBMyfsowiKV+Bna24gJ6WR8xYoBjraA==
+     procedure_id : 2250227464817607765
+     type_code : 14
+     code : |1+
+      
+      procédure AfficheConnexions()
+      
+      ListeSupprimeTout(COMBO_Connexion)
+      ListeAjoute(COMBO_Connexion,"Sélectionnez une connexion...")
+      ListeSelectPlus(COMBO_Connexion,1)
+      
+      
+      listeRetour est une liste de chaînes = listeConnexions()
+      
+      pour toute x de listeRetour
+      	ListeAjoute(COMBO_Connexion,x)
+      FIN
+      
+     type : 458752
+   -
+     name : AppliqueChangements
+     procedure_id : 2250228774782741281
+     type_code : 14
+     code : |1+
+      procédure AppliqueChangements()
+      si COMBO_Combo..Valeur > 1 et COMBO_Connexion..Valeur > 1 ALORS
+      	ChangeConnexion(COMBO_Connexion..ValeurAffichée,SAI_AdresseIP,SAI_Masque,SAI_Passerelle,SAI_DNS,SAI_DNSSEC)
+      sinon
+      	Erreur("Sélectionnez un dépot et une connextion réseau")
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : BQAAAAUAAAAwjDLmDSZ0H1P68nJIeNfqR9EvRjU/K+sVcM1T6rhVNr+VTV1mZ/rmoweYbFDZUhBGcv8UsxlDxVCOnb2U/SQOvlGWzNby3/w/V+ppSymxv+Vh
+  original_name : Modele1
+resources :
+ string_res :
+  identifier : 0x1f391bbf000280d9
+  internal_properties : BQAAAAUAAAAa2Zm8J9E/zh+/WIrVvz1fER/So3PB0gjQuxc1xKQVWY4ZDm5lfg==
+custom_note :
+ internal_properties : BQAAAAUAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : BQAAAAUAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

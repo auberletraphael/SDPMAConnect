@@ -1,0 +1,131 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : COL_ProcéduresGlobales
+ major_version : 25
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x1f39f955000311ee
+ internal_properties : BQAAAAUAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  type_code : 31
+  p_codes : []
+  procedures :
+   -
+     name : ListeDepots
+     procedure_id : 2250103731100543754
+     type_code : 15
+     code : |1+
+      procédure ListeDepots(MonJson est un JSON)
+      
+      vMonVariant est un variant
+      vMonVariant = JSONVersVariant(MonJson)
+      
+      listeMagasins est une liste de chaînes
+      
+      pour tout membre de vMonVariant..Membre
+      	listeMagasins.Ajoute(membre..Nom)
+      FIN
+      
+      
+      renvoyer listeMagasins
+      
+      //pour tout c de vMonVariant..Membre
+      //	trace(c..NOM)
+      //FIN
+      
+      
+      
+      
+     type : 458752
+   -
+     name : ChangeConnexion
+     procedure_id : 2250183527298296318
+     type_code : 15
+     code : |1+
+      procédure ChangeConnexion(NOMCONNEXION, IP, MASQUE, PASSERELLE, DNS, sDNSSEC sont des chaines)
+      
+      sChaineBatchIP est une chaîne
+      sChaineBatchDNS est une chaine
+      sChaineConnexion est une chaîne = caract(34) + NOMCONNEXION + Caract(34)
+      sChaineBatchIP = "netsh interface IP set address %1 static %2 %3 %4 1 > ip.retour"
+      sChaineBatchDNS = "netsh interface IP set DNS %1 static %2 primary > dns.retour"
+      
+      // Création des chaines
+      
+      sChaineBatchIP = ChaîneConstruit(sChaineBatchIP,sChaineConnexion,IP,MASQUE,PASSERELLE)
+      sChaineBatchDNS = ChaîneConstruit(sChaineBatchDNS,sChaineConnexion,DNS)
+      
+      nMonfichier est un entier = fCrée("changeconnexion.bat")
+      fEcritLigne(nMonfichier,sChaineBatchIP)
+      fEcritLigne(nMonfichier,sChaineBatchDNS)
+      fFerme(nMonfichier)
+      
+      info(OemVersAnsi(fChargeTexte("changeconnexion.bat")))
+      
+      //Trace(sChaineBatchIP)
+      //Trace(sChaineBatchDNS)
+      
+     type : 458752
+   -
+     name : ListeConnexions
+     procedure_id : 2250209486081762079
+     type_code : 15
+     code : |1-
+      
+      procédure listeConnexions()
+      Sablier(Vrai)
+      
+      listeConnexions est une liste de chaînes
+      
+      nMonfichier est un entier = fCrée("batchConnexions.bat")
+      fEcritLigne(nMonfichier,"netsh interface show interface > liste.txt")
+      fFerme(nMonfichier)
+      DDELance("batchConnexions.bat")
+      
+      Temporisation(100,tempoDessin)
+      
+      si fFichierExiste("liste.txt") ALORS
+      	listeinterfaces()
+      
+      sinon
+      	erreur("Impossible de récupérer la liste des interfaces")	
+      FIN
+      
+      
+      // on efface les fichiers temporaires
+      fSupprime("liste.txt")
+      fSupprime("batchConnexions.bat")
+      
+      Sablier(Faux)
+      
+      renvoyer listeConnexions
+      
+      procédure interne listeinterfaces()
+      	sChaineretour est une chaine = OemVersAnsi(fChargeTexte("liste.txt"))
+      	
+      	pour toute chaine sUnechaine de sChaineretour séparée par RC
+      		si Position(sUnechaine,"Activé") <> 0 ALORS
+      			//Trace(SansEspace(Droite(sUnechaine,15)))
+      			listeConnexions.Ajoute(SansEspace(Droite(sUnechaine,15)))
+      		FIN
+      	FIN
+      	
+      	
+      	
+      FIN
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : BQAAAAUAAAA6ih3UbgNXHwTtiPSFUEj+2fi/m7v4QV2rqidAupM=
+  original_name : COL_SansNom1
+resources :
+ string_res :
+  identifier : 0x1f39f955000211ee
+  internal_properties : BQAAAAUAAAAnMYFQ1bL/vz9ehh7L22SNNSlIzGTOI8h5F/WtgDNP
+custom_note :
+ internal_properties : BQAAAAUAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
