@@ -10,7 +10,7 @@ info :
 window :
  name : FEN_SDPMA_Connect
  identifier : 0x2f3a69f501b90455
- internal_properties : BQAAAAUAAACoawav/efq0QF0N4XebGUvvKr5a9wzXnkQhw7IBSIFlhkmgiha2SbLfOBrmMHBVR7IZVbl2UySAA2Q8iQlwEf34+YQvgNV4UI7W4L961hhpDzMO5Eh12w0t0CblOjWdf6oYl5VyUdlrW+sTQbmiNzFwHeKo39rP3lHNp3yoAwkaDirlUGzid7Kb11XlqU3bm1DyN215c7cwPcfy2x03a7lEKh+gcyegwfmlHBrc3B6WUcr6BqTL+3uwATji52cJyn2N5VU7TSpUWBvd7EiVUGKTWj3L/aavaLOkohXpN8+6ctH+XlxReD5Fzb+Fe3XTQ0a5OY5WFwI8mq4Ljy9yOB/8iheNlD2mzSi4Ir1XiI9+W+Ixb58JLtNXATk7oEJUOAHC1/28dUXrrEr7iXy4M+f64HONjngJ1cH/yYtufZNPBkieTG540W/oP66Nc6dvx3F07q5N8Md/g+nz9JGqWMOFeot3fvUiYqYnC4zwJWEUsHB1SeTDdtJ0jDUmYxjqwKVLmrWe5CaH/ybJHMSOkRR+X+W2uvumvhOUA/9/mxndUw7KWlKNeOkV8WDxhGBSdQWOmKwRQlNtyL5HL8UptR66bfjFX99ht1ckBd3KnaK8tk/JCqk2yLmkGAM1wYrugrt9WoucybQ+8HfY+DUjyU27QD4cXjqX+iyZsLtmaPd
+ internal_properties : BQAAAAUAAACvCKTUqrSAPj4uUAoPfIV8QBCbM3RkCgaCOgTw3JJs7MdUSgMOaGBmUpWAIKP4k3XpEOTvxObrSWJ+7FjlbdSIg1O8j7N/1hohbui5N9kniXHlrU66V0tEIpqK3yCGMNvlE3h53mKkOlUKWCy6KJdYxHUa6irXvtTsAFpAzGDqdOnfFpSkLHYA/MhAJuNjm7zbm2qAQSXSiCSXqsTZOTjkWrGk/mWCq7J9BOUohA8HhUJtFC2v1bw3/FQ8B9trzo6Ia/2gAvlgZSmkQsHEvsZa9Q1S74ekdHcx+FSevxVST11W9yoG0x6hcSMmbaDgtSV02q8Toc99yQWBd1oyButKV9sRI4r3CVnaVkjYOfDMCx9mHEd1VzrFXLRvzD6jYJJ0RhA4aEI5bPj6RSxfns3j0wvhSfoBAKbenOGG6j2EK4nrgKBlPplQ0QUp45y8TO7kU+BenLOWA1IGrrlTuZ3c896FRSuMRYrZnT+sXbRHlYVzz702DEyZQZ449nl27SplW1hoFQaETRZpdgRbN11c2uaMZaybIgFPXXxos/UTDK20SLorfY9aiBIvZnpksLutXXVegFK3pR6uMbCf+5d5wcvaedkI1UQOv98Ns49vmO7OYGeI4bBNGo8YNVXMi6JPXDT6mt/aSQjAI/SyoSQZ0eysHZBGDdFVMQbzQb0mTOvx7nbn2zVbYBV1/gYUSg2WwJPeXGShOrflCUK8SgchwlodVHt4JbBpeJlQrFhIVLJCFke5VtqU19WUJV1nvdhLLJOUHnNQjVA0eV0YTA1SqEpgrRDF1lfUxZxw3prQ
  controls :
   -
     name : COMBO_Combo
@@ -181,6 +181,26 @@ window :
       -
         type : 17
         enabled : false
+  -
+    name : BTN_Reset
+    identifier : 0x2f3babea006aae30
+    internal_properties : BQAAAAUAAABKV4ceHrYBLbOcFu8qcQnBS8ANuw2Wlg/2XerpMJ+AuH//jv8GMu7++xERddfHMx6P3djxOM+RpVFPevAVEFUVGneCd9Ut/nA0ppno0sL+mNFnDekv1dHvzIoo7ovOZNae3GGU1UVZcFAS6ZSn1NYRqTgeI9OLBoPR7MuVqD5nnJfHZCxzvihLSXMb8/Y7CY/Pm1XFGGjg/kgh3fT48weLfyKeq1pVBvFFYu95uEKU4oJBPJ6ysu20BZMIkX5ChMdhjLlDU6KQDtjzL3hmXPK8LelIwybnToTq+UmEhqFAC+x1wieWA9gAt33Mc+1xkzU8anJYsfb/7otcuIznldDDZzUTVUndGcc3r5u7WZEeBQsLmqiNB/ACxnNP4A17jipV2sNiWK4yqmrV03toy3NAM3eS9TvP7alUY1nqB/TPOPopVnTuHdApBnnrYKw9R6155dBKhSvbEhdzhTyBcRj6MCRaAiqDx++mhIhy22XxCj9QFos1u+G8poicKBP6hZLT2jwezUtXyodvTdOT/1g1vxZwvye775R9eeWMEJquIYgc9E5eNY0YHPPXwOCm2H9XOBxGNFn4EVO4qiw16/OCoRAIIcQA8M1APzKRRN5gfMHm1Mz62ISCmhmpUf/w+R6dlW5sgJKR9InyAE7kEDr3WSPUQoKHHNR08yBuuoq8DCJO0HB7w+hNRFKcV8BSvu/WayUdJbu/+hDIDK4JJUjwnbwil0boPhH/eREvAZAsaWSZtiiX1ReYBvuJlSBICyRHmEspzR44yN51tJkVANCWMXlBsjZjQ8I=
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1+
+         si COMBO_Connexion > 1 ALORS
+         	RétabliDHCP(COMBO_Connexion..ValeurAffichée)
+         sinon
+         	Erreur("Sélectionnez une connexion réseau")
+         	RepriseSaisie(COMBO_Connexion)
+         FIN
+        type : 18
+      -
+        type : 161
+        enabled : false
  menu :
   name : _Menu
   identifier : 0x292573e513b5f221
@@ -191,6 +211,26 @@ window :
  popup_menus : []
  message_bar :
   internal_properties : BQAAAAUAAABqPQh6HC8RxAVkp2SqPYLuZrfVhd+1KX4lx22hIT8uqEpE6yP7Sbc2rmVqdmL816EWzXOkEe9ijOtYwchZKAfpy3B1cNqhpJgsnbUs
+  controls :
+   -
+     name : CBM_SansNom
+     identifier : 0x2f3bbc47008499e5
+     internal_properties : BQAAAAUAAADAaJGyYuBpebISbTkjlOcyVWsmK2Nmo0OdV71AfFDzMJ2iz1Ufl0v1FNBbWiE4e44hazNMytXRWC4e201qCgLMCB1a4y5syw==
+     code_elements :
+      type_code : 62
+      p_codes :
+       -
+         type : 15
+         enabled : false
+       -
+         type : 16
+         enabled : false
+       -
+         type : 39
+         enabled : false
+       -
+         type : 17
+         enabled : false
  code_elements :
   type_code : 1
   p_codes :
@@ -198,7 +238,7 @@ window :
      code : |1+
       PROCEDURE MaFenêtre()
       
-      gJSONconnexion est un json = fChargeTexte("C:\Users\ralph\OneDrive\Bureau\conexionsSDPMA.json")
+      gJSONconnexion est un json = fChargeTexte("conexionsSDPMA.json")
       gvMonVariantGLOBAL est un variant = JSONVersVariant(gJSONconnexion)
       
    -

@@ -50,21 +50,93 @@ procedure_set :
       
       sChaineBatchIP est une chaîne
       sChaineBatchDNS est une chaine
+      sChaineBatchDNSSEC est une chaîne
       sChaineConnexion est une chaîne = caract(34) + NOMCONNEXION + Caract(34)
-      sChaineBatchIP = "netsh interface IP set address %1 static %2 %3 %4 1 > ip.retour"
-      sChaineBatchDNS = "netsh interface IP set DNS %1 static %2 primary > dns.retour"
-      
+      sChaineBatchIP = "netsh interface IP set address %1 static %2 %3 %4 1"
+      sChaineBatchDNS = "netsh interface IP set DNS %1 static %2 primary"
+      sChaineBatchDNSSEC = "netsh interface IP ADD DNS %1 %2 index=2"
+      sChaineTimeOUT est une chaine = "timeout /nobreak /T 3"
       // Création des chaines
-      
+      Message("Création du fichier de configuration...")
       sChaineBatchIP = ChaîneConstruit(sChaineBatchIP,sChaineConnexion,IP,MASQUE,PASSERELLE)
       sChaineBatchDNS = ChaîneConstruit(sChaineBatchDNS,sChaineConnexion,DNS)
+      sChaineBatchDNSSEC = chaineconstruit(sChaineBatchDNSSEC,sChaineConnexion,sDNSSEC)
       
       nMonfichier est un entier = fCrée("changeconnexion.bat")
       fEcritLigne(nMonfichier,sChaineBatchIP)
+      fEcritLigne(nMonfichier,sChaineTimeOUT)
       fEcritLigne(nMonfichier,sChaineBatchDNS)
+      si sDNSSEC <> "" ALORS
+      	fEcritLigne(nMonfichier,sChaineBatchDNSSEC)
+      FIN
+      
       fFerme(nMonfichier)
       
-      info(OemVersAnsi(fChargeTexte("changeconnexion.bat")))
+      // lancement du batch
+      Message("Configuration en cour...")
+      DDELance("changeconnexion.bat")
+      
+      Sablier(Vrai)
+      
+      Temporisation(500,tempoDessin)
+      
+      Sablier(Faux)
+      
+      // vérification des retour erreur
+      
+      sListeretour est une chaîne
+      sListeretour = fListeFichier(fRepEnCours() + "\*.retour")
+      
+      sListeErreur est une chaîne
+      
+      ////test
+      //trace(sListeretour)
+      //trace(sListeretour..Taille)
+      
+      
+      
+      si sListeretour..Taille > 4 ALORS
+      	Message("Une erreur a été détecté...")
+      	pour toutE chaine sUnFichier de sListeretour séparée par RC
+      		sChaineTEMP est une chaine = OemVersAnsi(fChargeTexte(sUnFichier))
+      		sListeErreur = sListeErreur + sChaineTEMP
+      		//trace(sChaineTEMP)
+      		
+      	FIN
+      
+      	
+      	Erreur(sListeErreur)
+      	
+      sinon
+      	Message("test de connexion en cour...")
+      		bRéponseping est un booléen
+      		bRéponseping = Ping("200.10.10.10")
+      		si bRéponseping ALORS
+      			Message("Connexion au Réseau SDPMA OK")
+      			Info("Configuration OK")
+      		sinon
+      			Message("Test connexion à internet...")
+      			bReponsenet est un booléen
+      			bReponsenet = ping("google.fr")
+      			si bReponsenet ALORS
+      				Message("Test connexion à internet => OK")
+      				info("Connexion a internet OK mais problème sur le réseau SDPMA, vérifiez vos connexions...")
+      				
+      			sinon
+      				Message("Erreur de connexion...")
+      				Erreur("L'utilitaire ne parviens pas à se connecté...")
+      			FIN
+      			
+      		FIN
+      		
+      
+      FIN
+      
+      // supprime les fichier temporaires
+      fSupprime("changeconnexion.bat")
+      fSupprime("*.retour")
+      
+      //info(OemVersAnsi(fChargeTexte("changeconnexion.bat")))
       
       //Trace(sChaineBatchIP)
       //Trace(sChaineBatchDNS)
@@ -77,7 +149,8 @@ procedure_set :
      code : |1-
       
       procédure listeConnexions()
-      Sablier(Vrai)
+      
+      Message("Récupération des connexions réseau...")
       
       listeConnexions est une liste de chaînes
       
@@ -100,8 +173,8 @@ procedure_set :
       fSupprime("liste.txt")
       fSupprime("batchConnexions.bat")
       
-      Sablier(Faux)
       
+      Message("Liste des connexions OK")
       renvoyer listeConnexions
       
       procédure interne listeinterfaces()
@@ -117,6 +190,77 @@ procedure_set :
       	
       	
       FIN
+     type : 458752
+   -
+     name : RétabliDHCP
+     procedure_id : 2250602892199842025
+     type_code : 15
+     code : |1+
+      procédure RétabliDHCP(sNOMCONNEXION est une chaine)
+      
+      sChaineConnexion est une chaîne = caract(34) + sNOMCONNEXION + Caract(34)
+      
+      Sablier(Vrai)
+      Message("Rétablissement du DHCP...")
+      // chaine initiale
+      sChaineIPDHCP est une chaîne = "netsh interface IP set ADDRESS %1 dhcp"
+      sChaineDNSDHCP est une chaîne = "netsh interface IP set DNS %1 source=dhcp"
+      // chaine avec Nom connexion
+      sChaineIPDHCP = ChaîneConstruit(sChaineIPDHCP,sChaineConnexion)
+      sChaineDNSDHCP = ChaîneConstruit(sChaineDNSDHCP,sChaineConnexion)
+      
+      // création fu batch
+      nMonfichier est un entier = fCrée("dhcp.bat")
+      fEcritLigne(nMonfichier,sChaineDNSDHCP)
+      fEcritLigne(nMonfichier,sChaineIPDHCP)
+      fFerme(nMonfichier)
+      
+      // lancement du batch
+      Message("Configuration DHCP en cour...")
+      DDELance("dhcp.bat")
+      
+      
+      Sablier(Vrai)
+      
+      Temporisation(300,tempoDessin)
+      
+      Sablier(Faux)
+      
+      // vérification des retour erreur
+      
+      sListeretour est une chaîne
+      sListeretour = fListeFichier(fRepEnCours() + "\*.reponse")
+      
+      sListeErreur est une chaîne
+      
+      
+      
+      SI sListeretour <> "" ALORS
+      	
+      	POUR TOUTE CHAÎNE sUnFichier de sListeretour séparée par RC
+      		sChaineTEMP est une chaine = OemVersAnsi(fChargeTexte(sUnFichier))
+      		sListeErreur = sListeErreur + sChaineTEMP
+      		//trace(sChaineTEMP)
+      		
+      	FIN
+      	// taille 4octet
+      	Trace(sListeErreur)
+      	trace(sListeErreur..Taille)
+      	
+      	Erreur(sListeErreur)
+      	
+      SINON
+      	Message("Configuration DHCP OK")
+      	info("Configuration DHCP OK")
+      	
+      FIN
+      
+      // supprime les fichier temporaires
+      fSupprime("dhcp.bat")
+      fSupprime("*.reponse")
+      
+      
+      
      type : 458752
   procedure_templates : []
   property_templates : []

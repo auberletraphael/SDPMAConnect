@@ -1,0 +1,67 @@
+{
+    "71 Magasin Vert": {
+        "IP": "172.17.71.%1",
+        "START": "31",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.71.55",
+        "DNS": "192.2.0.20",
+        "DNSSEC": ""
+    },
+    "21 Fermes et Jardins - T600": {
+        "IP": "172.17.21.%1",
+        "START": "81",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.21.55",
+        "DNS": "80.69.208.1",
+        "DNSSEC": "80.69.208.2"
+    },
+    "22 Fermes et Jardins - St André": {
+        "IP": "172.17.22.%1",
+        "START": "71",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.22.55",
+        "DNS": "80.69.208.1",
+        "DNSSEC": "80.69.208.2"
+    },
+    "23 Fermes et Jardins - St Paul": {
+        "IP": "172.17.23.%1",
+        "START": "71",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.23.55",
+        "DNS": "80.69.208.1",
+        "DNSSEC": "80.69.208.2"
+    },
+    "24 Fermes et Jardins - T14": {
+        "IP": "172.17.24.%1",
+        "START": "71",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.24.55",
+        "DNS": "80.69.208.1",
+        "DNSSEC": "80.69.208.2"
+    },
+    "26 Fermes et Jardins - St Denis": {
+        "IP": "172.17.26.%1",
+        "START": "71",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.26.55",
+        "DNS": "80.69.208.1",
+        "DNSSEC": "80.69.208.2"
+    },
+    "27 Fermes et Jardins - St Joseph": {
+        "IP": "172.17.27.%1",
+        "START": "71",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.27.55",
+        "DNS": "80.69.208.1",
+        "DNSSEC": "80.69.208.2"
+    },
+    "29 Fermes et Jardins - St Louis": {
+        "IP": "172.17.29.%1",
+        "START": "71",
+        "MASQUE": "255.255.255.0",
+        "PASSERELLE": "172.17.29.55",
+        "DNS": "80.69.208.1",
+        "DNSSEC": "80.69.208.2"
+    }
+    
+}
