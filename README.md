@@ -1,1 +1,1 @@
-[![Version](https://img.shields.io/badge/Version-1.0.0-brightgreen)](https://github.com/auberletraphael/SDPMAConnect/releases)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/auberletraphael/SDPMAconnect)](https://github.com/auberletraphael/SDPMAConnect/releases)
